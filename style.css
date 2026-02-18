@@ -7,6 +7,7 @@
 }
 
 /*========================================*/
+
 @font-face { 
 font-family: "Inter";
 src: url(assets/fonts/static/Inter-Regular.ttf);
@@ -24,6 +25,7 @@ font-weight: 700;
 } 
 
 /*=======================================*/
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -38,6 +40,8 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+
+/*=======================================*/
 
 .card{
     background-color: var(--Grey-800);
@@ -56,16 +60,19 @@ body{
     border-radius: 50%;
     margin-bottom: 20px;
 }
+
 .card_name{
     color: var(--White);
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 6px;
 }
+
 .card_town{
     color: var(--Green);
     margin-bottom: 20px;
 }
+
 .card_text{
     color: var(--White);
     font-weight: 400;
@@ -81,10 +88,10 @@ ul{
     flex-direction: column;
     gap: 12px;
 }
+
 li{
     width: 100%;
 }
-
 li a{
     width: 100%;
     background-color: var(--Grey-700);
@@ -101,7 +108,6 @@ li a{
         transform 0.2s ease;
 
 }
-
 li a:hover{
     background-color: var(--Green);
     color: var(--Grey-700);
