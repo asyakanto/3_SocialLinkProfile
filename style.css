@@ -1,0 +1,110 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+/*========================================*/
+@font-face { 
+font-family: "Inter";
+src: url(assets/fonts/static/Inter-Regular.ttf);
+font-weight: 400;
+} 
+@font-face { 
+font-family: "Inter";
+src: url(assets/fonts/static/Inter-SemiBold.ttf);
+font-weight: 600;
+}
+@font-face { 
+font-family: "Inter";
+src: url(assets/fonts/static/Inter-Bold.ttf);
+font-weight: 700;
+} 
+
+/*=======================================*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--Grey-900);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: var(--Grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px var(--Grey-800);
+    padding: 35px 30px;
+}
+
+.card_avatar{
+    width: 85px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.card_name{
+    color: var(--White);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.card_town{
+    color: var(--Green);
+    margin-bottom: 20px;
+}
+.card_text{
+    color: var(--White);
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+li{
+    width: 100%;
+}
+
+li a{
+    width: 100%;
+    background-color: var(--Grey-700);
+    display: block;
+    color: var(--White);
+    text-decoration: none;
+    padding: 12px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: 
+        color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+li a:hover{
+    background-color: var(--Green);
+    color: var(--Grey-700);
+    cursor: pointer;
+    transform: scale(1.02);
+}
